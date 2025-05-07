@@ -1,0 +1,40 @@
+﻿<Window x:Class="TimeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Time Программа" Height="500" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock Text="Введите часы и минуты:"/>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBox Name="vvodChasov" Width="50" Margin="0,0,10,0"/>
+                <TextBox Name="vvodMinut" Width="50"/>
+            </StackPanel>
+
+            <TextBlock Text="Введите минуты для вычитания:" Margin="0,10,0,0"/>
+            <TextBox Name="vvodVichMinut" Width="100"/>
+
+            <Button Content="Вычесть минуты" Click="vychestMinuty_Click" Margin="0,10,0,0"/>
+            <Button Content="Обнулить все" Click="obnulytVse_Click" Margin="0,5,0,0"/>
+            <Button Content="Обнулить только минуты" Click="obnulytMinuty_Click" Margin="0,5,0,0"/>
+
+            <Button Content="Проверить на ноль" Click="proverkaNaNol_Click" Margin="0,5,0,0"/>
+            <Button Content="Показать часы (байт)" Click="pokazatChasy_Click" Margin="0,5,0,0"/>
+
+            <TextBlock Text="Введите второе время для сравнения:" Margin="0,15,0,0"/>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBox Name="vvodChasov2" Width="50" Margin="0,0,10,0"/>
+                <TextBox Name="vvodMinut2" Width="50"/>
+            </StackPanel>
+
+            <Button Content="Сравнить ==" Click="sravnitRavno_Click" Margin="0,5,0,0"/>
+            <Button Content="Сравнить !=" Click="sravnitNeRavno_Click" Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <TextBlock Name="rezultat" Grid.Row="1" Margin="0,20,0,0" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
