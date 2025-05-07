@@ -1,4 +1,4 @@
-﻿<Window x:Class="TimeApp.MainWindow"
+<Window x:Class="TimeApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Time Программа" Height="500" Width="400">
@@ -22,8 +22,8 @@
             <Button Content="Обнулить все" Click="obnulytVse_Click" Margin="0,5,0,0"/>
             <Button Content="Обнулить только минуты" Click="obnulytMinuty_Click" Margin="0,5,0,0"/>
 
-            <Button Content="Проверить на ноль" Click="proverkaNaNol_Click" Margin="0,5,0,0"/>
-            <Button Content="Показать часы (байт)" Click="pokazatChasy_Click" Margin="0,5,0,0"/>
+            <Button Content="Проверить на ноль (bool)" Click="proverkaNaNol_Click" Margin="0,5,0,0"/>
+            <Button Content="Показать часы (byte)" Click="pokazatChasy_Click" Margin="0,5,0,0"/>
 
             <TextBlock Text="Введите второе время для сравнения:" Margin="0,15,0,0"/>
             <StackPanel Orientation="Horizontal" Margin="0,5">
