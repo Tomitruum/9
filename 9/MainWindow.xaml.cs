@@ -1,4 +1,3 @@
-﻿using System;
 using System.Windows;
 
 namespace TimeApp
@@ -74,7 +73,7 @@ namespace TimeApp
             try
             {
                 byte chasy = vremya;
-                rezultat.Text = "Часы (как byte): " + chasy;
+                rezultat.Text = "Количество часов: " + chasy;
             }
             catch
             {
