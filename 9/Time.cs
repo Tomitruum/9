@@ -1,5 +1,3 @@
-﻿using System;
-
 namespace TimeApp
 {
     public class Time
