@@ -7,6 +7,9 @@ namespace TimeApp
 
         public Time(byte chasov, byte minut)
         {
+            if (chasov > 23 || minut > 59)
+                throw new ArgumentOutOfRangeException("Некорректное время: часы должны быть 0–23, минуты 0–59.");
+
             hours = chasov;
             minutes = minut;
         }
