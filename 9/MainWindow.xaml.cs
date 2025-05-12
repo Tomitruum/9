@@ -19,13 +19,16 @@ namespace TimeApp
                 byte minuty = byte.Parse(vvodMinut.Text);
                 uint skolko = uint.Parse(vvodVichMinut.Text);
 
+                if (chasy > 23 || minuty > 59)
+                    throw new ArgumentOutOfRangeException("Часы должны быть от 0 до 23, минуты — от 0 до 59.");
+
                 vremya = new Time(chasy, minuty);
                 vremya = vremya - skolko;
                 rezultat.Text = "Новое время: " + vremya.ToString();
             }
             catch (Exception ex)
             {
-                rezultat.Text = "Ошибка: " + ex.Message;
+            rezultat.Text = "Ошибка: " + ex.Message;
             }
         }
 
